@@ -1,6 +1,6 @@
-Bu python dosyası bir veri depolama aracıdır. CSV, TXT, XML ve Excel dosyalarına veri ekleme, okuma ve kaydetme işlemlerini gerçekleştirmektedir.
+#Bu python dosyası bir veri depolama aracıdır. CSV, TXT, XML ve Excel dosyalarına veri ekleme, okuma ve kaydetme işlemlerini gerçekleştirmektedir.
 
-saveCSV
+#saveCSV
 Bu sınıf, verilerinizi csv dosyalarında saklamak için tasarlanmıştır. Aşağıdaki yöntemler sağlanmaktadır:
 
 init(self,filepath:str,justreading:bool = False) : Bir dosya yolu alır ve yazma veya sadece okuma işlemi yapacağınızı belirtir.
@@ -9,7 +9,8 @@ add_rows(self,rows) : Birden fazla satır ekleme işlemi yapar.
 read_row(self,rowcount) : Belirtilen satırdaki verileri okur.
 read_rows(self) : Tüm satırlardaki verileri okur.
 close(self) : Dosyayı kapatır.
-saveEXCEL
+
+#saveEXCEL
 Bu sınıf, verilerinizi Excel dosyalarında saklamak için tasarlanmıştır. Aşağıdaki yöntemler sağlanmaktadır:
 
 init(self,FileNAME:str, WorkBookTitle : str,justread:bool) : Bir dosya adı, bir çalışma sayfası adı ve yazma veya sadece okuma işlemi yapacağınızı belirtir.
@@ -25,7 +26,8 @@ add_rows(self, RowList:list) : Birden fazla satır ekleme işlemi yapar.
 read_all(self) : Tüm verileri okur.
 read_lines(self) : Tüm satırlardaki verileri okur.
 saveTXT(self) : Dosyayı kaydeder.
-saveXML
+
+#saveXML
 Bu sınıf, verilerinizi XML dosyalarında saklamak için tasarlanmıştır. Aşağıdaki yöntemler sağlanmaktadır:
 
 init(self,filePATH,justreading:bool,tree_name:str = None) : Bir dosya yolu alır, yazma veya sadece okuma işlemi yapacağınızı belirtir.
@@ -40,7 +42,7 @@ from saveXML import SaveXML
 # Dosya yolu belirleme
 xml_file = SaveXML("veriler.xml", justreading=True)
 
-# Tüm verileri okuma
+# Tüm verileri okuma 
 data = xml_file.read()
 print(data)
 
