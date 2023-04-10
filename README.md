@@ -39,14 +39,14 @@ Kullanım
 Örneğin, bir XML dosyasındaki verileri okumak için şu şekilde kullanabilirsiniz:
 from saveXML import SaveXML
 
-# Dosya yolu belirleme
+* Dosya yolu belirleme
 xml_file = SaveXML("veriler.xml", justreading=True)
 
-# Tüm verileri okuma 
+* Tüm verileri okuma 
 data = xml_file.read()
 print(data)
 
-# Belirli bir element adındaki verileri okuma
+* Belirli bir element adındaki verileri okuma
 element_name = "person"
 person_data = xml_file.find_all(element_name)
 print(person_data)
@@ -54,10 +54,10 @@ print(person_data)
 XML dosyasına veri yazmak için create_element() yöntemi kullanılabilir. Bu yöntem, yeni bir element oluşturur ve alt elementler ekleyebilir.
 from saveXML import SaveXML
 
-# Dosya yolu belirleme
+* Dosya yolu belirleme
 xml_file = SaveXML("veriler.xml")
 
-# Yeni bir element oluşturma
+* Yeni bir element oluşturma
 element_name = "person"
 element_data = {
     "name": "John",
@@ -71,10 +71,10 @@ Bu örnekte, "veriler.xml" adlı bir dosya oluşturulur ve "person" adında yeni
 just_return parametresi varsayılan olarak False olarak ayarlanmıştır. Ancak, create_element() yöntemi, belirli bir elementi sadece döndürmek istediğinizde kullanılabilir.
 from saveXML import SaveXML
 
-# Dosya yolu belirleme
+* Dosya yolu belirleme
 xml_file = SaveXML("veriler.xml")
 
-# Yeni bir element oluşturma ve yalnızca döndürme
+* Yeni bir element oluşturma ve yalnızca döndürme
 element_name = "person"
 element_data = {
     "name": "John",
